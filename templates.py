@@ -11,7 +11,7 @@ list_of_files = [
     ".gitignore",
     "requirements.txt",
     "README.md",
-    "src/app.py",
+    "src/dashboard-div/app.py",
     "data/demo.pdf",
     "notebooks/__init__.py",
     "notebooks/README.md",
