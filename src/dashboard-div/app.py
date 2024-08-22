@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+# import plotly.express as px
 
 @st.cache_data
 def load_data():
@@ -29,3 +30,18 @@ plt.xlabel('Date')
 plt.ylabel('GHI')
 plt.title('GHI over Tinme')
 st.pyplot(plt)
+
+# st.header('Interactive Plotly Example')
+# fig = px.line(filtered_date, x='date', y='GHI', title='GHI Over Time')
+# st.plotly_chart(fig)
+
+
+
+st.sidebar.header('Customize Visualization')
+value_range = st.sidebar.slider('Select Value Range', min_value=int(data['GHI'].min()), max_value=int(data['GHI'].max()), value=(int(data['GHI'].min()), int(data['GHI'].max())))
+
+slider_data = filtered_date[(filtered_date['GHI'] >= value_range[0]) & (filtered_date['GHI'] <= value_range[1])]
+st.write(slider_data)
+
+if st.sidebar.button('Generate Report'):
+    st.write('Generating report...')
