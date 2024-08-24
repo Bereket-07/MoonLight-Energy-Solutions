@@ -16,7 +16,6 @@ This project is a Streamlit-based interactive dashboard designed for performing 
 
 ## Technologies
 
-This particular repository holds the backend code used to provide services to the client. It is written in `C#` and makes use of `ASP.NET Web Api`. The code segregation used for this project is `MVCS` (Model-View-Controller-Service). This will be discussed more on the [Folder Organization](#folder-organization) section. Understanding these things will help you navigate through the project with ease.
 
 The set of technologies we utilized in this project:
 
