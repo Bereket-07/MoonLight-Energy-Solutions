@@ -43,8 +43,8 @@ The set of technologies we utilized in this project:
          └── 📰README.md
 └── 💻src
     └── 📁dashboard-div
-                    └── 📝app.py
-                    └── 📝README.md
+         └── 📝app.py
+         └── 📝README.md
 └── ⌛tests
          └── __init__.py
 └── 📜.gitignore
